@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="fondoico.ico" />
+    <title>Bibimbap Restaurante</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <header>
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #abc4aa"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./img/logo-solo.png"
+              style="width: 50px; height: auto; margin-right: 10px"
+              alt="" />
+            <img
+              src="./img/logo-letra.png"
+              style="width: 75px; height: auto; margin-right: 20px"
+              alt=""
+          /></a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >NUESTRA COMIDA</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">NUESTROS VALORES</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <!----------------------------------Carrusel Info------------------------------------------->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img/carrusel/c4.png" class="d-block w-100" />
+          <div
+            class="carousel-caption d-none d-md-block"
+            style="background-color: rgb(0, 0, 0, 0.5)"
+          >
+            <h2>Sannakji</h2>
+            <h5>
+              Es una variedad de hoe, o plato crudo, de la gastronomía de Corea.
+              Consiste en nakji vivo que se corta en trozos pequeños y se sirve
+              inmediatamente, normalmente condimentado levemente con sésamo y
+              aceite de sésamo.
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/carrusel/c5.png" class="d-block w-100" />
+          <div
+            class="carousel-caption d-none d-md-block"
+            style="background-color: rgb(0, 0, 0, 0.5)"
+          >
+            <h2>Kimchi de rábano</h2>
+            <h5>
+              Este tipo de kimchi tiene un sabor ligeramente diferente al del
+              kimchi tradicional, ya que el rábano daikon tiene un sabor más
+              suave y dulce en comparación con la col china utilizada en el
+              kimchi común.
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carrusel/c6.png" class="d-block w-100" />
+          <div
+            class="carousel-caption d-none d-md-block"
+            style="background-color: rgb(0, 0, 0, 0.5)"
+          >
+            <h2>Bingsu</h2>
+            <h5>
+              Es un postre muy popular y tradicional en Corea; es hielo raspado
+              acompañado de diversos ingredientes como: frutas cortadas,
+              chocolate derretido, crema batida, leche condensada, cereales,
+              entre otros.
+            </h5>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!----------------------------------Botones de animacion------------------------------------------->
+    <div
+      style="
+        background-color: black;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding-top: 1%;
+        padding: 1%;
+        padding-left: 5%;
+      "
+    >
+      <button id="mostrarespe" class="btn btn-outline-warning">
+        Especialidades
+      </button>
+
+      <button id="nuestracview" class="btn btn-outline-warning">
+        Nuestra Comida
+      </button>
+      <button id="nuestrahview" class="btn btn-outline-warning">
+        Nuestra Historia
+      </button>
+      <button id="cerrartodo" class="btn btn-outline-danger">
+        Quitar Todo
+      </button>
+    </div>
+    <!----------------------------------Especialidades------------------------------------------->
+    <div>
+      <div
+        id="miDiv"
+        style="
+          background-image: url('./img/especialidades.png');
+          background-size: cover;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <h1
+            style="
+              font-family: Arial, sans-serif;
+              color: white;
+              text-align: center;
+              font-size: 2em;
+              margin-bottom: 0em;
+            "
+          >
+            ESPECIALIDADES
+          </h1>
+          <div style="text-align: center; width: 100%">
+            <h4
+              style="
+                font-family: Arial, sans-serif;
+                font-size: 1.1em;
+                margin-bottom: 2em;
+                color: white;
+              "
+            >
+              ¡Descubre nuestros platos destacados!
+            </h4>
+            <div style="display: flex; justify-content: space-around">
+              <div
+                style="
+                  text-align: center;
+                  width: 200px;
+                  padding: 20px;
+                  background-color: white;
+                  border: 1px solid #ddd;
+                  margin: 30px;
+                "
+              >
+                <img src="./img/especialidad1.png" style="width: 100%" />
+                <div>
+                  <h4 style="font-family: Arial, sans-serif">Samgyeopsal</h4>
+                  <p style="font-family: Arial, sans-serif">Barriga de cerdo</p>
+                </div>
+              </div>
+
+              <div
+                style="
+                  text-align: center;
+                  width: 200px;
+                  padding: 20px;
+                  background-color: white;
+                  border: 1px solid #ddd;
+                  margin: 30px;
+                "
+              >
+                <img src="./img/especialidad2.png" style="width: 100%" />
+                <div>
+                  <h4 style="font-family: Arial, sans-serif">Japchae</h4>
+                  <p style="font-family: Arial, sans-serif">Fideo celofán</p>
+                </div>
+              </div>
+
+              <div
+                style="
+                  text-align: center;
+                  width: 200px;
+                  padding: 20px;
+                  background-color: white;
+                  border: 1px solid #ddd;
+                  margin: 30px;
+                "
+              >
+                <img src="./img/especialidad3.png" style="width: 100%" />
+                <div>
+                  <h4 style="font-family: Arial, sans-serif">Tteokbokki</h4>
+                  <p style="font-family: Arial, sans-serif">Pastel de arroz</p>
+                </div>
+              </div>
+
+              <div
+                style="
+                  text-align: center;
+                  width: 200px;
+                  padding: 20px;
+                  background-color: white;
+                  border: 1px solid #ddd;
+                  margin: 30px;
+                "
+              >
+                <img src="./img/especialidad4.png" style="width: 100%" />
+                <div>
+                  <h4 style="font-family: Arial, sans-serif">Bulgogi</h4>
+                  <p style="font-family: Arial, sans-serif">Ternera cortada</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------------------Nuestra Comida------------------------------------------->
+    <div
+      id="container"
+      style="
+        position: relative;
+        width: 100%;
+        height: 700px;
+        background-image: url('/img/nuestracomida.png');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div id="content" style="width: 90%; text-align: left; padding: 0 20px">
+        <h1
+          style="
+            font-family: Arial, sans-serif;
+            color: black;
+            font-size: 2em;
+            margin-bottom: 1em;
+          "
+        >
+          NUESTRA COMIDA
+        </h1>
+        <h2
+          style="
+            font-family: Arial, sans-serif;
+            color: black;
+            font-size: 1em;
+            margin-bottom: 3em;
+          "
+        >
+          El plato principal es nuestro Bibimbap
+        </h2>
+        <button
+          id="boton"
+          style="
+            background-color: #675d50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1em;
+            cursor: pointer;
+          "
+        >
+          VER MÁS
+        </button>
+      </div>
+    </div>
+    <!-----------------------------------nuestra historia---------------------------------------------------->
+    <div
+      id="container2"
+      style="
+        position: relative;
+        width: 100%;
+        height: 700px;
+        background-image: url('/img/foto.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div
+        id="content"
+        style="
+          width: 90%;
+          align-items: center;
+          height: 80%;
+          justify-content: center;
+          display: flex;
+          background-color: rgb(0, 0, 0, 0.5);
+          text-align: center;
+          padding: 0 20px;
+        "
+      >
+        <h1
+          style="
+            font-family: Arial, sans-serif;
+            color: white;
+            font-size: 2em;
+            margin-bottom: 1em;
+          "
+        >
+          NUESTRA HISTORIA
+        </h1>
+      </div>
+    </div>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: black"
+    >
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row my-4">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div
+              class="rounded-circle shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+              style="width: 150px; height: 150px"
+            >
+              <img src="./img/logonav.png" height="140" alt="" />
+            </div>
+
+            <p class="text-center">Food</p>
+
+            <ul class="list-unstyled d-flex flex-row justify-content-center">
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white ps-2" href="#!">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Food</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>When your pet is missing</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Recently found</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>How to adopt?</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Pets for adoption</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Material gifts</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Help with walks</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Volunteer activities</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Food</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>General information</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>About the shelter</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Statistic data</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Job</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Tenders</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Contact</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <i class="fas fa-map-marker-alt pe-2"></i>Warsaw, 57 Street,
+                  Poland
+                </p>
+              </li>
+              <li>
+                <p><i class="fas fa-phone pe-2"></i>+ 01 234 567 89</p>
+              </li>
+              <li>
+                <p>
+                  <i class="fas fa-envelope pe-2 mb-0"></i>contact@example.com
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright:
+        <br />
+        Ivonne Duran <br />
+        Lorena Medina <br />
+        Fernando Musto <br />
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- End of .container -->
+    <script src="/jquery-3.7.1min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Ocultar el div con el identificador "miDiv"
+        $("#miDiv").hide(1500);
+        $("#container").hide(1500);
+        $("#container2").hide(1500);
+      });
+    </script>
+    <script>
+      $("#mostrarespe").click(function () {
+        $("#miDiv").show(1500);
+      });
+    </script>
+    <script>
+      $("#cerrartodo").click(function () {
+        $("#miDiv").hide(1500);
+        $("#container").hide(1500);
+        $("#container2").hide(1500);
+      });
+    </script>
+    <script>
+      $("#nuestrahview").click(function () {
+        $("#container2").show(1500);
+      });
+    </script>
+    <script>
+      $("#nuestracview").click(function () {
+        $("#container").show(1500);
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
