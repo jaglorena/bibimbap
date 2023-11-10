@@ -30,7 +30,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="#">
             <img
               src="./img/logo-solo.png"
               style="width: 50px; height: auto; margin-right: 10px"
@@ -42,17 +42,15 @@
           /></a>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >NUESTRA COMIDA</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/NuestroV.html"
+              <a class="nav-link active" href="#" id="Valot"
                 >NUESTROS VALORES</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/Ofertas.html">OFERTAS</a>
+              <a class="nav-link active" href="#" id="Ofet">OFERTAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#" id="WHO">QUIENES SOMOS</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -70,7 +68,6 @@
       </div>
     </nav>
   </header>
-
   <body>
     <!----------------------------------Botones de animacion------------------------------------------->
     <div
@@ -343,6 +340,47 @@
     <script>
       $("#nuestrahview").click(function () {
         $("#mision").show(1500);
+      });
+    </script>
+    <script>
+      // Obtener el elemento de enlace por su ID
+      var enlace = document.getElementById("Ofet");
+      // Agregar un evento de clic al enlace
+      enlace.addEventListener("click", function (event) {
+        // Evitar el comportamiento predeterminado del enlace (navegar a otra página)
+        event.preventDefault();
+        // Hacer algo cuando se hace clic en el enlace
+        console.log("Enlace clicado");
+        // Redirigir a nuestra página "nuestrovalores.html"
+        window.location.href = "Ofertas.html";
+      });
+    </script>
+
+    <script>
+      // Obtener el elemento de enlace por su ID
+      var enlace = document.getElementById("WHO");
+      // Agregar un evento de clic al enlace
+      enlace.addEventListener("click", function (event) {
+        // Evitar el comportamiento predeterminado del enlace (navegar a otra página)
+        event.preventDefault();
+        // Hacer algo cuando se hace clic en el enlace
+        console.log("Enlace clicado");
+
+        window.location.href = "QuienesSomos.html";
+      });
+    </script>
+
+    <script>
+      // Obtener el elemento de enlace por su ID
+      var enlace = document.getElementById("Valot");
+      // Agregar un evento de clic al enlace
+      enlace.addEventListener("click", function (event) {
+        // Evitar el comportamiento predeterminado del enlace (navegar a otra página)
+        event.preventDefault();
+        // Hacer algo cuando se hace clic en el enlace
+        console.log("Enlace clicado");
+
+        window.location.href = "NuestroV.html";
       });
     </script>
 
