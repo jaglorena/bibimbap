@@ -2,15 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Parallax Content Slider with CSS3 and jQuery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="fondoico.ico" />
-    <title>Nuestros valores</title>
+    <meta
+      name="description"
+      content="Parallax Content Slider with CSS3 and jQuery"
+    />
+    <meta
+      name="keywords"
+      content="slider, animations, parallax, delayed, easing, jquery, css3, kendo UI"
+    />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+    <link
+      href="http://fonts.googleapis.com/css?family=Economica:700,400italic"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <noscript>
+      <link rel="stylesheet" type="text/css" href="css/nojs.css" />
+    </noscript>
   </head>
   <header>
     <nav
@@ -54,6 +75,11 @@
             <li class="nav-item">
               <a class="nav-link active" href="/Ofertas.html">OFERTAS</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/QuienesSomos.html"
+                >QUIENES SOMOS</a
+              >
+            </li>
           </ul>
           <form class="d-flex">
             <input
@@ -72,93 +98,58 @@
   </header>
 
   <body>
-    <!----------------------------------Botones de animacion------------------------------------------->
-    <div
-      style="
-        background-color: black;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        padding-top: 1%;
-        padding: 1%;
-        padding-left: 5%;
-      "
-    >
-      <button id="mostrarespe" class="btn btn-outline-warning">Visión</button>
-
-      <button id="nuestrahview" class="btn btn-outline-warning">Misión</button>
-      <button id="cerrartodo" class="btn btn-outline-danger">
-        Quitar Todo
-      </button>
-    </div>
-
     <div class="container">
-      <div class="row" id="vision">
-        <div
-          class="col-6"
-          style="
-            background-color: #f3deba;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            margin-top: 2%;
-          "
-        >
-          <h2 class="col-4">Visión</h2>
-          <p class="col-5">
-            Ofrecer una experiencia auténtica de la gastronomía coreana,
-            brindando platos tradicionales como el bulgogi y el kimchi y
-            bibimbap, en un ambiente acogedor que refleje la cultura y la
-            hospitalidad coreana.
+      <div id="da-slider" class="da-slider">
+        <div class="da-slide">
+          <h2>¡PROMOCION DEL DIA!</h2>
+          <p>
+            ¡Descubre los sabores cautivadores de Asia en Bibimbap! Deléitate
+            con nuestra promoción exclusiva: disfruta de un 10% de descuento en
+            todos nuestros platos de inspiración coreana esta semana. ¡Siente la
+            explosión de sabores auténticos en cada bocado!
           </p>
+          <a href="#" class="da-link">Read more</a>
+          <div class="da-img">
+            <img src="images/promo.jpg" alt="promocion" />
+          </div>
         </div>
-        <div
-          class="col-6"
-          style="
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            margin-top: 2%;
-          "
-        >
-          <img src="/img/vision.jpg" style="width: 50%" alt="" />
-        </div>
-      </div>
-      <div class="row" id="mision">
-        <div
-          class="col-6"
-          style="
-            background-color: #f3deba;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            margin-top: 2%;
-          "
-        >
-          <h2 class="col-4">Misión</h2>
-          <p class="col-5">
-            Nuestra misión es ofrecer a nuestros clientes una experiencia
-            culinaria inigualable de la auténtica comida coreana. Nos
-            comprometemos a utilizar ingredientes frescos y de alta calidad,
-            preparados con maestría, para satisfacer los paladares más
-            exigentes. Buscamos ser un punto de encuentro donde los amantes de
-            la comida coreana puedan disfrutar de platos tradicionales y
-            deliciosos en un ambiente acogedor y amigable.
+        <div class="da-slide">
+          <h2>KIMCHI</h2>
+          <p>
+            Kimchi del dia! ven y aprovecha esta super promocion con el 10% de
+            descuento! hoy todo el dia.
           </p>
+          <a href="#" class="da-link">Read more</a>
+          <div class="da-img">
+            <img src="images/Kimchi.webp" alt="image01" />
+          </div>
         </div>
-        <div
-          class="col-6"
-          style="
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            margin-top: 2%;
-          "
-        >
-          <img src="/img/mision.jpg" style="width: 50%" />
+        <div class="da-slide">
+          <h2>Bulgogi</h2>
+          <p>
+            Un platillo coreano que tienes que probar alguna vez! Un platillo
+            callejero desde Corea del Sur, a nuestra mesa! aplica descuento
+            hoy!!
+          </p>
+          <a href="#" class="da-link">Read more</a>
+          <div class="da-img"><img src="images/teo.jpg" alt="image01" /></div>
         </div>
+        <div class="da-slide">
+          <h2>NUESTRO POSTRE DEL DIA!</h2>
+          <p>
+            Hoppang! ricas bolitas de leche aplica descuento todo el dia!
+            comparte y disfruta con amigos y familia!<br />
+            TE ESPERAMOS!!!
+          </p>
+          <a href="#" class="da-link">Read more</a>
+          <div class="da-img">
+            <img src="images/postre.webp" alt="image01" />
+          </div>
+        </div>
+        <nav class="da-arrows">
+          <span class="da-arrows-prev"></span>
+          <span class="da-arrows-next"></span>
+        </nav>
       </div>
     </div>
     <!-- Remove the container if you want to extend the Footer to full width. -->
@@ -321,31 +312,17 @@
       </div>
       <!-- Copyright -->
     </footer>
-    <script src="/jquery-3.7.1min.js"></script>
-    <script>
-      $(document).ready(function () {
-        // Ocultar el div con el identificador "miDiv"
-        $("#vision").hide(1500);
-        $("#mision").hide(1500);
-      });
-    </script>
-    <script>
-      $("#mostrarespe").click(function () {
-        $("#vision").show(1500);
-      });
-    </script>
-    <script>
-      $("#cerrartodo").click(function () {
-        $("#vision").hide(1500);
-        $("#mision").hide(1500);
-      });
-    </script>
-    <script>
-      $("#nuestrahview").click(function () {
-        $("#mision").show(1500);
-      });
-    </script>
 
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="js/jquery.cslider.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#da-slider").cslider();
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="fondoico.ico" />
-    <title>Nuestros valores</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="/stilos.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -30,7 +30,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="#">
             <img
               src="./img/logo-solo.png"
               style="width: 50px; height: auto; margin-right: 10px"
@@ -54,6 +54,11 @@
             <li class="nav-item">
               <a class="nav-link active" href="/Ofertas.html">OFERTAS</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/QuienesSomos.html"
+                >QUIENES SOMOS</a
+              >
+            </li>
           </ul>
           <form class="d-flex">
             <input
@@ -72,102 +77,32 @@
   </header>
 
   <body>
-    <!----------------------------------Botones de animacion------------------------------------------->
-    <div
-      style="
-        background-color: black;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        padding-top: 1%;
-        padding: 1%;
-        padding-left: 5%;
-      "
-    >
-      <button id="mostrarespe" class="btn btn-outline-warning">Visión</button>
-
-      <button id="nuestrahview" class="btn btn-outline-warning">Misión</button>
-      <button id="cerrartodo" class="btn btn-outline-danger">
-        Quitar Todo
-      </button>
-    </div>
-
-    <div class="container">
-      <div class="row" id="vision">
-        <div
-          class="col-6"
-          style="
-            background-color: #f3deba;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            margin-top: 2%;
-          "
-        >
-          <h2 class="col-4">Visión</h2>
-          <p class="col-5">
-            Ofrecer una experiencia auténtica de la gastronomía coreana,
-            brindando platos tradicionales como el bulgogi y el kimchi y
-            bibimbap, en un ambiente acogedor que refleje la cultura y la
-            hospitalidad coreana.
-          </p>
-        </div>
-        <div
-          class="col-6"
-          style="
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            margin-top: 2%;
-          "
-        >
-          <img src="/img/vision.jpg" style="width: 50%" alt="" />
-        </div>
+    <div class="deku">
+      <div class="ochako">
+        <h1>¿Quienes Somos?</h1>
+        <p style="font-size: 18px; text-align: justify; margin: 5%">
+          En BIBIMBAP Somos una empresa familiar, con alto conocimiento en la
+          producción y venta de alimentos; la experiencia adquirida a través de
+          los años, nos da el conocimiento para valorar la importancia del
+          cliente, quien es el motivo de nuestros esfuerzos, y así llegar con la
+          seguridad de poder ofrecer productos de excelente calidad con
+          responsabilidad y cumplimiento. Contamos con excelente calidad humana
+          que brinda la atención apropiada.
+        </p>
       </div>
-      <div class="row" id="mision">
-        <div
-          class="col-6"
-          style="
-            background-color: #f3deba;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            margin-top: 2%;
-          "
-        >
-          <h2 class="col-4">Misión</h2>
-          <p class="col-5">
-            Nuestra misión es ofrecer a nuestros clientes una experiencia
-            culinaria inigualable de la auténtica comida coreana. Nos
-            comprometemos a utilizar ingredientes frescos y de alta calidad,
-            preparados con maestría, para satisfacer los paladares más
-            exigentes. Buscamos ser un punto de encuentro donde los amantes de
-            la comida coreana puedan disfrutar de platos tradicionales y
-            deliciosos en un ambiente acogedor y amigable.
-          </p>
-        </div>
-        <div
-          class="col-6"
-          style="
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            margin-top: 2%;
-          "
-        >
-          <img src="/img/mision.jpg" style="width: 50%" />
-        </div>
+      <div class="waves">
+        <div class="wave circulo a"></div>
+        <div class="wave circulo b"></div>
+        <div class="wave circulo c"></div>
       </div>
     </div>
-    <!-- Remove the container if you want to extend the Footer to full width. -->
+
     <footer
       class="text-center text-lg-start text-white"
       style="background-color: black"
     >
       <!-- Grid container -->
-      <div class="container p-4" style="margin-top: 2%">
+      <div class="container">
         <!--Grid row-->
         <div class="row my-4">
           <!--Grid column-->
@@ -321,30 +256,6 @@
       </div>
       <!-- Copyright -->
     </footer>
-    <script src="/jquery-3.7.1min.js"></script>
-    <script>
-      $(document).ready(function () {
-        // Ocultar el div con el identificador "miDiv"
-        $("#vision").hide(1500);
-        $("#mision").hide(1500);
-      });
-    </script>
-    <script>
-      $("#mostrarespe").click(function () {
-        $("#vision").show(1500);
-      });
-    </script>
-    <script>
-      $("#cerrartodo").click(function () {
-        $("#vision").hide(1500);
-        $("#mision").hide(1500);
-      });
-    </script>
-    <script>
-      $("#nuestrahview").click(function () {
-        $("#mision").show(1500);
-      });
-    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -352,4 +263,5 @@
       crossorigin="anonymous"
     ></script>
   </body>
+  <!-- Remove the container if you want to extend the Footer to full width. -->
 </html>
