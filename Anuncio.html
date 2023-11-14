@@ -2,15 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="icon" href="fondoico.ico" />
-    <title>Anuncios</title>
+    <title>Anuncio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Parallax Content Slider with CSS3 and jQuery"
+    />
+    <meta
+      name="keywords"
+      content="slider, animations, parallax, delayed, easing, jquery, css3, kendo UI"
+    />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+    <link
+      href="http://fonts.googleapis.com/css?family=Economica:700,400italic"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <noscript>
+      <link rel="stylesheet" type="text/css" href="css/nojs.css" />
+    </noscript>
   </head>
   <header>
     <nav
@@ -74,8 +96,60 @@
     </nav>
   </header>
   <body>
-    <!----------------------------------Botones de animacion------------------------------------------->
-
+    <div class="container">
+      <div id="da-slider" class="da-slider">
+        <div class="da-slide">
+          <h2>¡PROMOCION DEL DIA!</h2>
+          <p>
+            ¡Descubre los sabores cautivadores de Asia en Bibimbap! Deléitate
+            con nuestra promoción exclusiva: disfruta de un 10% de descuento en
+            todos nuestros platos de inspiración coreana esta semana. ¡Siente la
+            explosión de sabores auténticos en cada bocado!
+          </p>
+          <a href="#" class="da-link">Read more</a>
+          <div class="da-img">
+            <img src="images/promo.jpg" alt="promocion" />
+          </div>
+        </div>
+        <div class="da-slide">
+          <h2>KIMCHI</h2>
+          <p>
+            Kimchi del dia! ven y aprovecha esta super promocion con el 10% de
+            descuento! hoy todo el dia.
+          </p>
+          <a href="#" class="da-link">Read more</a>
+          <div class="da-img">
+            <img src="images/Kimchi.webp" alt="image01" />
+          </div>
+        </div>
+        <div class="da-slide">
+          <h2>Bulgogi</h2>
+          <p>
+            Un platillo coreano que tienes que probar alguna vez! Un platillo
+            callejero desde Corea del Sur, a nuestra mesa! aplica descuento
+            hoy!!
+          </p>
+          <a href="#" class="da-link">Read more</a>
+          <div class="da-img"><img src="images/teo.jpg" alt="image01" /></div>
+        </div>
+        <div class="da-slide">
+          <h2>NUESTRO POSTRE DEL DIA!</h2>
+          <p>
+            Hoppang! ricas bolitas de leche aplica descuento todo el dia!
+            comparte y disfruta con amigos y familia!<br />
+            TE ESPERAMOS!!!
+          </p>
+          <a href="#" class="da-link">Read more</a>
+          <div class="da-img">
+            <img src="images/postre.webp" alt="image01" />
+          </div>
+        </div>
+        <nav class="da-arrows">
+          <span class="da-arrows-prev"></span>
+          <span class="da-arrows-next"></span>
+        </nav>
+      </div>
+    </div>
     <!-- Remove the container if you want to extend the Footer to full width. -->
     <footer
       class="text-center text-lg-start text-white"
@@ -237,27 +311,11 @@
       <!-- Copyright -->
     </footer>
     <script src="/jquery-3.7.1min.js"></script>
-    <script>
-      $(document).ready(function () {
-        // Ocultar el div con el identificador "miDiv"
-        $("#vision").hide(1500);
-        $("#mision").hide(1500);
-      });
-    </script>
-    <script>
-      $("#mostrarespe").click(function () {
-        $("#vision").show(1500);
-      });
-    </script>
-    <script>
-      $("#cerrartodo").click(function () {
-        $("#vision").hide(1500);
-        $("#mision").hide(1500);
-      });
-    </script>
-    <script>
-      $("#nuestrahview").click(function () {
-        $("#mision").show(1500);
+
+    <script type="text/javascript" src="js/jquery.cslider.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#da-slider").cslider();
       });
     </script>
     <script>
@@ -314,9 +372,8 @@
         window.location.href = "Anuncio.html";
       });
     </script>
-
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bSootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
