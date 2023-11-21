@@ -64,3 +64,30 @@
     transform: translate(160px, -60px);
   }
 }
+
+.dekkk {
+  margin: 50px auto;
+  width: max-content;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2rem;
+  text-shadow: #0f9bf6;
+  box-shadow: #0f9bf6;
+  animation: teclear 1s steps(70) infinite;
+  animation: efect 0.5s steps-end infinite alternate;
+}
+
+@keyframes teclear {
+  from {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes efect {
+  50% {
+    border-color: aqua;
+  }
+}
