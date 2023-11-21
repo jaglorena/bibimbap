@@ -344,7 +344,6 @@
     <script src="assets/jquery.lettering.js"></script>
     <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
     <script src="jquery.textillate.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       $(document).ready(function () {
         $(".control.col-1-2").hide(); // Oculta el div con la clase "control col-1-2"
@@ -503,6 +502,36 @@
         console.log("Enlace clicado");
         // Redirigir a nuestra página "nuestrovalores.html"
         window.location.href = "Anuncio.html";
+      });
+    </script>
+    <script>
+      // Your existing navigation script
+
+      // Replace the existing click event script with a simple fade-in animation
+      var enlaces = ["Ofet", "WHO", "Valot", "anun"];
+      enlaces.forEach(function (enlaceId) {
+        var enlace = document.getElementById(enlaceId);
+        enlace.addEventListener("click", function (event) {
+          event.preventDefault();
+          console.log("Enlace clicado");
+          window.location.href = enlaceId + ".html";
+        });
+      });
+
+      // Add a simple fade-in animation for elements with the 'fade-in' class
+      document.addEventListener("DOMContentLoaded", function () {
+        var fadeElements = document.querySelectorAll(".fade-in");
+        fadeElements.forEach(function (element) {
+          element.style.opacity = 0;
+          var fadeInEffect = setInterval(function () {
+            element.style.opacity = (
+              parseFloat(element.style.opacity) + 0.1
+            ).toString();
+            if (element.style.opacity >= 1) {
+              clearInterval(fadeInEffect);
+            }
+          }, 100);
+        });
       });
     </script>
     <script
