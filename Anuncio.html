@@ -52,7 +52,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img
               src="./img/logo-solo.png"
               style="width: 50px; height: auto; margin-right: 10px"
@@ -78,6 +78,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#" id="anun">ANUNCIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#" id="Service">SERVICIOS</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -108,7 +111,7 @@
           </p>
           <a href="#" class="da-link">Read more</a>
           <div class="da-img">
-            <img src="images/promo.jpg" alt="promocion" />
+            <img src="./Anunimg/1.jpg" alt="promocion" />
           </div>
         </div>
         <div class="da-slide">
@@ -119,7 +122,7 @@
           </p>
           <a href="#" class="da-link">Read more</a>
           <div class="da-img">
-            <img src="images/Kimchi.webp" alt="image01" />
+            <img src="./Anunimg/2.jpg" alt="image01" />
           </div>
         </div>
         <div class="da-slide">
@@ -130,7 +133,7 @@
             hoy!!
           </p>
           <a href="#" class="da-link">Read more</a>
-          <div class="da-img"><img src="images/teo.jpg" alt="image01" /></div>
+          <div class="da-img"><img src="./Anunimg/3.jpg" alt="image01" /></div>
         </div>
         <div class="da-slide">
           <h2>NUESTRO POSTRE DEL DIA!</h2>
@@ -370,6 +373,19 @@
         console.log("Enlace clicado");
         // Redirigir a nuestra página "nuestrovalores.html"
         window.location.href = "Anuncio.html";
+      });
+    </script>
+    <script>
+      // Obtener el elemento de enlace por su ID
+      var enlace = document.getElementById("Service");
+      // Agregar un evento de clic al enlace
+      enlace.addEventListener("click", function (event) {
+        // Evitar el comportamiento predeterminado del enlace (navegar a otra página)
+        event.preventDefault();
+        // Hacer algo cuando se hace clic en el enlace
+        console.log("Enlace clicado");
+
+        window.location.href = "./AltaCocina.html";
       });
     </script>
     <script

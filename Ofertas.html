@@ -52,7 +52,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img
               src="./img/logo-solo.png"
               style="width: 50px; height: auto; margin-right: 10px"
@@ -78,6 +78,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#" id="anun">ANUNCIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#" id="Service">SERVICIOS</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -370,6 +373,19 @@
         console.log("Enlace clicado");
         // Redirigir a nuestra página "nuestrovalores.html"
         window.location.href = "Anuncio.html";
+      });
+    </script>
+    <script>
+      // Obtener el elemento de enlace por su ID
+      var enlace = document.getElementById("Service");
+      // Agregar un evento de clic al enlace
+      enlace.addEventListener("click", function (event) {
+        // Evitar el comportamiento predeterminado del enlace (navegar a otra página)
+        event.preventDefault();
+        // Hacer algo cuando se hace clic en el enlace
+        console.log("Enlace clicado");
+
+        window.location.href = "./AltaCocina.html";
       });
     </script>
     <script
